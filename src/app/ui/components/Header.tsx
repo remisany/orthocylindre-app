@@ -2,7 +2,7 @@ import {FC} from "react";
 import Image from 'next/image';
 
 const headerClassName: string = `
-    absolute p-[14px] flex items-center justify-center w-screen
+    p-[10px] flex items-center justify-center w-screen
 `
 
 const h1ClassName: string = `

@@ -1,15 +1,20 @@
-import React, { FC } from 'react';
-import type { Metadata } from "next";
+import React from 'react';
+import type {Metadata, Viewport} from "next";
 import "@/app/ui/styles/globals.scss";
 import { inter } from '@/app/ui/fonts';
 
 export const metadata: Metadata = {
   title: "Orthocylindre",
-  //generator: "Next.js",
   manifest: "/manifest.json",
   description: "Orthocylindre est une plateforme",
   authors: [{ name: "Rémi SANY" }],
 };
+
+export const viewport: Viewport = {
+  width: "width=device-width",
+  initialScale: 1.0,
+  interactiveWidget: "resizes-content"
+}
 
 const RootLayout = ({children}: Readonly<{children: React.ReactNode}>) => {
   return (

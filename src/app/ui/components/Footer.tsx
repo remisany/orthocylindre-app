@@ -5,7 +5,7 @@ import Image from 'next/image';
 import styles from "@/app/ui/styles/footer.module.scss"
 
 const footerClassName: string = `
-    absolute p-[10px] bottom-0 w-screen
+    p-[10px] w-screen
 `
 
 const containerClassName: string = `

@@ -8,6 +8,7 @@ import CylinderForm from "@/app/ui/components/CylinderForm";
 import Footer from "@/app/ui/components/Footer";
 
 const mainClassName = `
+    flex flex-col py-[10px] h-svh justify-between
     ${styles.container}
     ${roboto.className}
 `

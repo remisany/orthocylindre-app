@@ -17,8 +17,7 @@ import {getResults} from "@/app/lib/inputNumber";
 import {Errors, Results, Values} from "@/app/lib/definition";
 
 const containerClassName: string = `
-    mx-auto lg:w-1/2 flex-col p-[10px]
-    h-svh container
+    lg:w-1/2 flex-col p-[10px]
     flex items-center justify-center
 `
 
