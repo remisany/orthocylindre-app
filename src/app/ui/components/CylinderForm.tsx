@@ -15,11 +15,10 @@ import {getResults} from "@/app/lib/inputNumber";
 
 //import types
 import {Errors, Results, Values} from "@/app/lib/definition";
-import * as CONSTANTS from "constants";
 
 const containerClassName: string = `
     mx-auto lg:w-1/2 flex-col p-[10px]
-    h-screen container
+    h-svh container
     flex items-center justify-center
 `
 
