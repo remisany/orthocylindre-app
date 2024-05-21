@@ -1,0 +1,13 @@
+@import "@/app/ui/styles/_variables.scss";
+
+.f {
+  &_card {
+    background-color: $white;
+  }
+
+  &_link {
+    &:hover {
+      color: $darkBlue;
+    }
+  }
+}

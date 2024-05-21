@@ -1,0 +1,16 @@
+@import "@/app/ui/styles/_variables.scss";
+
+.nf {
+  &_card {
+    background-color: $white;
+
+    &_bottom {
+      font-weight: 700;
+      text-decoration: underline;
+
+      &:hover {
+        color: $darkPurple;
+      }
+    }
+  }
+}

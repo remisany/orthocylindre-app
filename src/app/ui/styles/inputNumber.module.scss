@@ -1,0 +1,45 @@
+@import "@/app/ui/styles/_variables.scss";
+
+.in_group {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  border-style: solid;
+  border-color: transparent;
+  background-image: linear-gradient($white, $white), linear-gradient(230deg, $darkPurple, $lightPurple);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  display: flex;
+
+  &_error {
+    background-image: linear-gradient($white, $white), linear-gradient(230deg, $red, $red);
+  }
+
+  &_disabled {
+    background-image: linear-gradient($white, $white), linear-gradient(230deg, $darkPurpleOpacity, $lightPurpleOpacity);
+  }
+
+  &_label {
+    position: absolute;
+    background: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &_input {
+    outline: none;
+    width: 100%;
+
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  &_unit {
+    font-weight: 700;
+  }
+
+  &_unit {
+    border-color: #000000;
+  }
+}
