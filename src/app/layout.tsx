@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   width: "width=device-width",
+  height: "height=device-height",
   initialScale: 1.0,
-  interactiveWidget: "resizes-content"
 }
 
 const RootLayout = ({children}: Readonly<{children: React.ReactNode}>) => {
