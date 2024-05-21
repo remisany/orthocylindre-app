@@ -4,7 +4,7 @@
     "description": "Orthocylindre est une plateforme ",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
