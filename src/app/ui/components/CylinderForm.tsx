@@ -18,7 +18,7 @@ import {getResults} from "@/app/lib/inputNumber";
 import {Errors, Results, Values} from "@/app/lib/definition";
 
 const containerClassName: string = `
-    lg:w-1/2 flex-col px-[35px]
+    lg:w-1/2 flex-col px-[35px] py-[50px]
     flex items-center justify-center
 `
 
