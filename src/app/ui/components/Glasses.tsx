@@ -3,38 +3,6 @@ import {FC} from "react";
 //import styles
 import styles from "@/app/ui/styles/glasses.module.scss"
 
-/*
-/*const containerClassName: string = `
-    absolute flex items-center w-full px-[5px]
-    lg:w-1/2
-`
-
-const branchClassName: string = `
-    w-[10px] h-[50px] self-start mt-[20px]
-    ${styles.g_branch}
-`
-
-const branchLeftClassName: string = `
-    ${branchClassName}
-    rounded-l-[10px]
-`
-
-const branchRightClassName: string = `
-    ${branchClassName}
-    rounded-r-[10px]
-`
-
-const roundClassName: string = `
-    border-[10px] h-[300px] grow-[3] rounded-[20px]
-    ${styles.g_round}
-`
-
-const centerClassName: string = `
-    border-t-[10px] h-[240px] grow-[1]
-    ${styles.g_center}
-`
-* */
-
 const containerClassName: string = `
     absolute flex items-center w-full px-[5px]
     lg:w-1/2
