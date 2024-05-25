@@ -8,6 +8,7 @@ import styles from "@/app/ui/styles/cylinderForm.module.scss"
 
 //import components
 import InputNumber from "@/app/ui/components/InputNumber";
+import Glasses from "@/app/ui/components/Glasses";
 
 //import lib
 import {inputsNumber, resultsNumber} from "@/app/lib/constants";
@@ -17,21 +18,21 @@ import {getResults} from "@/app/lib/inputNumber";
 import {Errors, Results, Values} from "@/app/lib/definition";
 
 const containerClassName: string = `
-    lg:w-1/2 flex-col p-[10px]
+    lg:w-1/2 flex-col px-[35px]
     flex items-center justify-center
 `
 
 const cardTopClassName: string = `
-    rounded-t-[8px] rounded-b-[2px] px-[8px] py-[12px] mb-[4px]
+    rounded-t-[8px] rounded-b-[2px] px-[6px] py-[10px] mb-[4px] z-10
     flex flex-col ${styles.card}
 `
 
 const cardBottomClassName: string = `
-    rounded-t-[2px] rounded-b-[8px] px-[8px] py-[12px]
+    rounded-t-[2px] rounded-b-[8px] px-[6px] py-[10px] z-10
     flex flex-col ${styles.card}
 `
 
-const pCN: string = `
+const pClassName: string = `
     font-bold
     text-[14px] mb-[16px] px-[4px]
 `
@@ -65,8 +66,10 @@ const CylinderForm: FC = () => {
 
     return (
         <div className={containerClassName}>
+            <Glasses/>
+
             <form method="POST" className={cardTopClassName}>
-                <p className={pCN}>Transposons... </p>
+                <p className={pClassName}>Transposons... </p>
                 <div className={rowClassName}>
                     {inputsNumber.map((input, index) => {
                         const {id} = input
@@ -86,12 +89,12 @@ const CylinderForm: FC = () => {
                 src="/arrow.svg"
                 width={20}
                 height={20}
-                className="absolute z-10 mt-[4px]"
+                className="absolute z-20 mt-[4px]"
                 alt="arrow icon"
             />
 
             <div className={cardBottomClassName}>
-                <p className={pCN}>Résultat : </p>
+                <p className={pClassName}>Résultat : </p>
                 <div className={rowClassName}>
                     {resultsNumber.map((result, index) => {
                         const {id} = result

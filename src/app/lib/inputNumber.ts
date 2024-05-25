@@ -44,7 +44,7 @@ export const validations: Validations = {
 
 const getSphere = (sphere: number, cylinder: number): string => {
     const newSphere: number = sphere + cylinder
-    return newSphere >= 0 ? `+${newSphere}` : `-${newSphere}`
+    return newSphere >= 0 ? `+${newSphere}` : `${newSphere}`
 }
 
 const getCylinder = (cylinder: number): string => {

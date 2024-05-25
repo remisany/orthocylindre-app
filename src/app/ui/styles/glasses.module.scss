@@ -1,0 +1,11 @@
+@import "@/app/ui/styles/_variables.scss";
+
+.g {
+  &_round, &_center {
+    border-color: $lightPurpleOpacity;
+  }
+
+  &_branch {
+    background-color: $lightPurpleOpacity;
+  }
+}
