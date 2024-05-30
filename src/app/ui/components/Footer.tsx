@@ -4,6 +4,9 @@ import Image from 'next/image';
 //import styles
 import styles from "@/app/ui/styles/footer.module.scss"
 
+//import Google Analytics
+import { sendGAEvent } from '@next/third-parties/google'
+
 const footerClassName: string = `
     p-[10px] w-screen
 `
@@ -31,6 +34,7 @@ const Footer: FC = () => {
                 />
 
                 <a
+                    onClick={() => sendGAEvent({ event: "redirect-orthotrainement", value: "redirect-orthotrainement" })}
                     href="https://orthotrainement.fr/"
                     target="_blank"
                     className={aClassName}

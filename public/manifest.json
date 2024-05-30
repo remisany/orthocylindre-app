@@ -1,7 +1,7 @@
 {
     "name": "Orthocylindre",
     "short_name": "Orthocylindre",
-    "description": "Orthocylindre est une plateforme ",
+    "description": "Orthocylindre est un outil pour convertir une prescription de lunette cylindre positif en négatif ou inversement.",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
     "display": "standalone",
