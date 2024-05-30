@@ -22,9 +22,11 @@ export const viewport: Viewport = {
 }
 
 const RootLayout = ({children}: Readonly<{children: React.ReactNode}>) => {
+  const id: string = process.env.ORTHOCYLINDRE_PUBLIC_MEASUREMENT_ID!
+
   return (
     <html lang="fr">
-      <GoogleAnalytics gaId={process.env.ORTHOCYLINDRE_PUBLIC_MEASUREMENT_ID} />
+      <GoogleAnalytics gaId={id} />
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

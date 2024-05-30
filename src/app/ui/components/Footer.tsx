@@ -1,3 +1,4 @@
+'use client'
 import {FC} from "react";
 import Image from 'next/image';
 
@@ -22,6 +23,13 @@ const aClassName: string = `
 `
 
 const Footer: FC = () => {
+    const onClick = (): void => {
+        sendGAEvent({
+            event: "redirect-orthotrainement",
+            value: "redirect-orthotrainement"
+        });
+    }
+
     return (
         <div className={footerClassName}>
             <div className={containerClassName}>
@@ -34,7 +42,7 @@ const Footer: FC = () => {
                 />
 
                 <a
-                    onClick={() => sendGAEvent({ event: "redirect-orthotrainement", value: "redirect-orthotrainement" })}
+                    onClick={onClick}
                     href="https://orthotrainement.fr/"
                     target="_blank"
                     className={aClassName}
